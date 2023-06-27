@@ -11,7 +11,6 @@ class CardScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Card Widget'),
-        backgroundColor: Colors.red,
       ),
       body: ListView(
         children: const<Widget>[

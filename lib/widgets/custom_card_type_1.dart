@@ -9,8 +9,7 @@ class CustomCardType1 extends StatelessWidget {
   Widget build(BuildContext context) {
     return Card(
       clipBehavior: Clip.antiAlias,
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-      shadowColor: Colors.red,
+      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)), 
       elevation: 10,
        child: Column(
          children: [
@@ -26,8 +25,8 @@ class CustomCardType1 extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.end,
               children: [
-                TextButton(onPressed: (){}, child: const Text('Procesar'),style: TextButton.styleFrom(foregroundColor: Colors.red,textStyle:TextStyle(fontWeight: FontWeight.bold))),
-                TextButton(onPressed: (){}, child: const Text('Cancelar'),style: TextButton.styleFrom(foregroundColor: Colors.red,textStyle:TextStyle(fontWeight: FontWeight.bold)))
+                TextButton(onPressed: (){}, child: const Text('Procesar'),style: TextButton.styleFrom(textStyle:TextStyle(fontWeight: FontWeight.bold))),
+                TextButton(onPressed: (){}, child: const Text('Cancelar'),style: TextButton.styleFrom(textStyle:TextStyle(fontWeight: FontWeight.bold)))
               ],
             ), 
             ),

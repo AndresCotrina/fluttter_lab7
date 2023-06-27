@@ -8,7 +8,6 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Home Screen'),
-        backgroundColor: Colors.red,
       ),
       body: Center(
         child: FilledButton(
@@ -16,9 +15,6 @@ class HomeScreen extends StatelessWidget {
             Navigator.pushNamed(context, 'card');
           },
           child: Text('Go to Card Screen'),
-          style: ButtonStyle(
-            backgroundColor: MaterialStatePropertyAll(Colors.red),
-          ),
         ),
       ),
     );
